@@ -1,5 +1,5 @@
 @Library('shared_library') _
-
+import com.thirdparty.IsPrime
 pipeline {
     agent any
 
@@ -7,6 +7,8 @@ pipeline {
         stage('Hello') {
             steps {
                 hello "Raakhi"
+                echo 'The value of foo is : ' + IsPrime.foo
+                echo 'Is 2 prime or not : ' + IsPrime.check(2)
             }
         }
     }
