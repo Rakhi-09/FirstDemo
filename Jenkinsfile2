@@ -9,6 +9,7 @@ pipeline {
                 hello "Raakhi"
                 echo 'The value of foo is : ' + IsPrime.foo
                 echo 'Is 2 prime or not : ' + IsPrime.check(2)
+                sh "ls ~/.groovy/grapes/"
             }
         }
     }
