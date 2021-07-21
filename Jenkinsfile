@@ -1,9 +1,7 @@
 pipeline {
     agent any
     options { overrideIndexTriggers(false)}
-    triggers {
-        pollSCM('H/1 * * * *')
-    }
+    
     stages {
         stage('Compiling Stage!!!') {
             steps {
