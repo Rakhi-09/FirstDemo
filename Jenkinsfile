@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    options { overrideIndexTriggers(true)}
+    options { overrideIndexTriggers(false)}
     
     stages {
         stage('Compiling Stage!!!') {
